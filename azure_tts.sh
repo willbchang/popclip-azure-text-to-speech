@@ -4,10 +4,10 @@
 # icon: symbol:message.and.waveform
 # options:
 # - { identifier: region, label: Azure Region, type: string, default value: eastus, description: "Region for Speech Service" }
-# - { identifier: key, label: Azure Subscription Key, type: string, description: "Your Speech resource key" }
-# - { identifier: format, label: Microsoft Output Format, type: string, default value: audio-16khz-32kbitrate-mono-mp3, description: "Audio output format" }
-# - { identifier: lang, label: Language, type: string, default value: en-US, description: "Language for text" }
-# - { identifier: voice, label: Voice Name, type: string, default value: en-US-JennyMultilingualNeural, description: "The name of voice" }
+# - { identifier: key, label: Azure Subscription Key, type: string, description: "The key of Speech Resource" }
+# - { identifier: format, label: Audio Outputs, type: string, default value: audio-16khz-32kbitrate-mono-mp3, description: "Microsoft Output Format" }
+# - { identifier: lang, label: Locale, type: string, default value: en-US, description: "The language to speech" }
+# - { identifier: voice, label: Text-to-speech Voices, type: string, default value: en-US-JennyMultilingualNeural, description: "The voice name with locale prefixed" }
 
 # Create a temporary audio file
 temp_audio_file=$(mktemp)
